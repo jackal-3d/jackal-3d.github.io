@@ -161,6 +161,8 @@ body {
   opacity: 1;
   visibility: visible;
   transition: opacity 0.5s;
+  display: flex;
+  flex-direction: column;
 }
 
 body:has(.modal.active) {
