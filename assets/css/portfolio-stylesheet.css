@@ -29,6 +29,16 @@ body {
   padding: 15px 20px;
 }
 
+#aboutSection {
+  display: flex;
+  flex-direction: wrap;
+}
+
+.aboutImg {
+  width: 30%;
+  object-fit: contain;
+}
+
 #projectSectionWrapper {
   width: 100%;
   background-color: #e8e8e8;
