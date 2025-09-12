@@ -196,6 +196,13 @@ body:has(.modal.active) {
   overflow: hidden;
 }
 
+.drawmodalImg {
+  margin: auto;
+  width: 50%;
+  max-width: 500px;
+  object-fit: contain;
+}
+
 .custom-cursor {
   position: fixed;
   opacity: 0;
