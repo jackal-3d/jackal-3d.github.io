@@ -1,4 +1,4 @@
-// custom cursor
+// MOUSE CURSOR
 const cursor = document.querySelector(".custom-cursor");
 const links = document.querySelectorAll("a, .projectList");
 let isCursorInited = false;
@@ -36,13 +36,40 @@ document.addEventListener("mousemove", (e) => {
 
 document.addEventListener("mouseout", destroyCursor);
 
-// modals
-document.querySelector('#bushviper').addEventListener("click", function(function(e) {
-  document.querySelector('.vipermodal').classList.add('active');
+// MODAL DIALOGS
+$('#bushviper').click(function(e) {
+  $('.vipermodal').addClass('active');
   e.preventDefault();
 });
 
-document.querySelector('.vipermodal').addEventListener("click", function(function(e) {
-  document.querySelector('.vipermodal').classList.remove('active');
+$('.vipermodal').click(function(e) {
+  $('.vipermodal').removeClass('active');
+  e.preventDefault();
+});
+
+$('#teaket').click(function(e) {
+  $('.teamodal').addClass('active');
+  e.preventDefault();
+});
+$('.teamodal').click(function(e) {
+  $('.teamodal').removeClass('active');
+  e.preventDefault();
+});
+
+$('#lighthou').click(function(e) {
+  $('.lighthousemodal').addClass('active');
+  e.preventDefault();
+});
+$('.lighthousemodal').click(function(e) {
+  $('.lighthousemodal').removeClass('active');
+  e.preventDefault();
+});
+
+$('#kitiles').click(function(e) {
+  $('.tilemodal').addClass('active');
+  e.preventDefault();
+});
+$('.tilemodal').click(function(e) {
+  $('.tilemodal').removeClass('active');
   e.preventDefault();
 });
