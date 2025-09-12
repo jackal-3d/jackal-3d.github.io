@@ -93,6 +93,12 @@ body {
   font-size: calc(var(--font-size)*4);
   margin: auto;
 }
+#interestPreview:before {
+  content: '[Interests]';
+  font-family: "Krona One";
+  font-size: calc(var(--font-size)*4);
+  margin: auto;
+}
 #projectListContainer:has(:hover) ~ #projectPreview:before {
   content: '';
 }
