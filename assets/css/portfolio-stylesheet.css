@@ -183,7 +183,8 @@ body {
 }
 
 .modal.active {
-  overflow: hidden;
+  max-height: 100vh;
+  overflow-y: auto;
   opacity: 1;
   visibility: visible;
   transition: opacity 0.5s;
