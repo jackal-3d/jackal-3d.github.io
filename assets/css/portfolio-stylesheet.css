@@ -40,8 +40,12 @@ body {
 #about {
   font-size: calc(var(--font-size)*2);
 }
+
 #drawing {
   background: rgb(168, 191, 164, 50%);
+}
+#drawing:hover {
+  cursor: pointer;
 }
 
 .aboutImg {
