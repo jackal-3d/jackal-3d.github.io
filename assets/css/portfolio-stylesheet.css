@@ -30,6 +30,7 @@ body {
 }
 
 #aboutSection {
+  width: 60%;
   display: flex;
   flex-direction: wrap;
 }
