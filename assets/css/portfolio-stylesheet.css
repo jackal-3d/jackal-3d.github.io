@@ -37,6 +37,10 @@ body {
   align-items: center;
 }
 
+#about {
+  font-size: var(--font-size);
+}
+
 .aboutImg {
   width: 100%;
   object-fit: contain;
@@ -260,6 +264,9 @@ body:has(.modal.active) {
   }
   .custom-cursor {
     display: block;
+  }
+  #about {
+    width: 80%;
   }
 }
 
