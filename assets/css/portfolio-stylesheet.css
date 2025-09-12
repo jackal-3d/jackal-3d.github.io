@@ -171,13 +171,15 @@ body:has(.modal.active) {
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
   .project {
-    font-size: 5vw;
+    font-size: 8vw;
   }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
-  
+  .project {
+    font-size: 5vw;
+  }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
