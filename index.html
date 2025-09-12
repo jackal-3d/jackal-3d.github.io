@@ -48,6 +48,7 @@
 <div class="modal teamodal">Tea kettle modal dialog</div>
 <div class="modal lighthousemodal">Lighthouse modal dialog</div>
 <div class="modal tilemodal">Kitchen tiles modal dialog</div>
+<div class="modal drawingmodal">Drawing modal dialog</div>
 
 </div>
 
@@ -127,6 +128,15 @@ $('#kitiles').click(function(e) {
 });
 $('.tilemodal').click(function(e) {
   $('.tilemodal').removeClass('active');
+  e.preventDefault();
+});
+
+  $('#drawing').click(function(e) {
+  $('.drawingmodal').addClass('active');
+  e.preventDefault();
+});
+$('.drawingmodal').click(function(e) {
+  $('.drawingmodal').removeClass('active');
   e.preventDefault();
 });
 </script>
