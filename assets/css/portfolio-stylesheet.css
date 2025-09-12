@@ -19,13 +19,6 @@ body {
 #website-container {
   width: 100%;
   height: 100%;
-  display: flex;
-  flex-direction: column;
-}
-
-#header, #projectSectionWrapper, #interestSection, #footer {
-  flex-grow: 0;
-  flex-shrink: 0;
 }
 
 #header {
@@ -142,16 +135,6 @@ body {
   margin-right: auto;
   font-size: calc(var(--font-size)*2);
   text-decoration: none;
-}
-
-#footer {
-  background: #333435;
-  color: #e8e8e8;
-  height: 90px;
-  line-height: 90px;
-  margin-top: 50px;
-  text-align: center;
-  flex-grow: 1;
 }
 
 .modal {
