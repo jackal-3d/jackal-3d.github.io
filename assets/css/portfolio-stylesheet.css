@@ -191,12 +191,18 @@ body:has(.modal.active) {
   .project {
     font-size: 8vw;
   }
+  .custom-cursor {
+      display: none;
+  }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
   .project {
     font-size: 5vw;
+  }
+  .custom-cursor {
+      display: none;
   }
 }
 
@@ -209,7 +215,9 @@ body:has(.modal.active) {
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
-
+  .custom-cursor {
+      display: block;
+  }
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
