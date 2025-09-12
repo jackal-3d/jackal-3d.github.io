@@ -31,12 +31,14 @@ body {
 
 #aboutSection {
   width: 60%;
+  margin: auto;
   display: flex;
   flex-direction: row;
+  align-items: center;
 }
 
 .aboutImg {
-  width: 30%;
+  width: 100%;
   object-fit: contain;
 }
 
