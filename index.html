@@ -16,7 +16,7 @@
 <div id="website-container">
 
   <div id="contact"><a href="mailto:3d.jackal@gmail.com">3d.jackal@gmail.com</a></div>
-  <div id="about">I’m a 3D artist who enjoys creating game-ready assets and loves all things procedural. My interests include ↗drawing and language learning.</div>
+  <div id="about">I’m a 3D artist who enjoys creating game-ready assets and loves all things procedural. My interests include <span id="drawing" style="text-decoration: underline;">↗drawing</span> and language learning.</div>
   <div id="projects">
     <div class="project" id="bushviper">Bush viper</div>
     <div class="project">Tea kettle</div>
@@ -91,7 +91,7 @@ $('.drawingmodal').click(function(e) {
   
 // custom cursor
 const cursor = document.querySelector(".custom-cursor");
-const links = document.querySelectorAll("a, .projectList, #drawing");
+const links = document.querySelectorAll("a, .project, #drawing");
 let isCursorInited = false;
 
 const initCursor = () => {
