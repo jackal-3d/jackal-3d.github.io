@@ -37,39 +37,12 @@ document.addEventListener("mousemove", (e) => {
 document.addEventListener("mouseout", destroyCursor);
 
 // modals
-$('#bushviper').click(function(e) {
-  $('.vipermodal').addClass('active');
+document.querySelector('#bushviper').addEventListener("click", function(function(e) {
+  document.querySelector('.vipermodal').classList.add('active');
   e.preventDefault();
 });
 
-$('.vipermodal').click(function(e) {
-  $('.vipermodal').removeClass('active');
-  e.preventDefault();
-});
-
-$('#teaket').click(function(e) {
-  $('.teamodal').addClass('active');
-  e.preventDefault();
-});
-$('.teamodal').click(function(e) {
-  $('.teamodal').removeClass('active');
-  e.preventDefault();
-});
-
-$('#lighthou').click(function(e) {
-  $('.lighthousemodal').addClass('active');
-  e.preventDefault();
-});
-$('.lighthousemodal').click(function(e) {
-  $('.lighthousemodal').removeClass('active');
-  e.preventDefault();
-});
-
-$('#kitiles').click(function(e) {
-  $('.tilemodal').addClass('active');
-  e.preventDefault();
-});
-$('.tilemodal').click(function(e) {
-  $('.tilemodal').removeClass('active');
+document.querySelector('.vipermodal').addEventListener("click", function(function(e) {
+  document.querySelector('.vipermodal').classList.remove('active');
   e.preventDefault();
 });
