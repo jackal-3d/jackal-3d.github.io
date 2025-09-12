@@ -189,7 +189,7 @@ body {
   visibility: visible;
   transition: opacity 0.5s;
   display: flex;
-  flex-wrap: no-wrap;
+  flex-wrap: nowrap;
   flex-direction: column;
   align-items: center;
 }
@@ -199,6 +199,7 @@ body:has(.modal.active) {
 }
 
 .drawmodalImg {
+  display: block;
   margin: auto;
   width: 50%;
   max-width: 500px;
