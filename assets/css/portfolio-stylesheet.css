@@ -1,0 +1,258 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+
+:root {
+  --font-size: 0.8vw;
+}
+
+* {
+  ccursor: none;
+  font-family: "Krona One";
+  color: #333534;
+}
+
+body {
+  background: #e8e8e8;
+  margin: 0;
+}
+
+#website-container {
+  width: 100%;
+  height: 100%;
+}
+
+#header {
+  font-family: "Krona One";
+  font-size: calc(var(--font-size)*2.6);
+  font-style: bold;
+  background: #a8bfa4;
+  padding: 15px 20px;
+}
+
+#projectSectionWrapper {
+  width: 100%;
+  background-color: #e8e8e8;
+}
+#projectSection, #interestSection {
+  width: 100%;
+  max-width: 900px;
+  margin: 50px auto;
+  display: flex;
+  flex-direction: row;
+}
+
+#projectListContainer, #interestListContainer {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.projectList, .interestList {
+  font-family: "Krona One";
+  font-size: calc(var(--font-size)*4);
+  margin-left: 10px;
+  transition: transform 0.5s ease;
+  width: fit-content;
+}
+.projectList:before, .interestList:before {
+  content: '↗ ';
+  font-family: "Source Sans 3", sans-serif;
+  font-weight: 520;
+  font-style: normal;
+  opacity: 0;
+}
+.projectList:hover, .interestList:hover {
+  transform: translateX(50px);
+  background: #e8e8e8;
+  cursor: pointer;
+}
+.projectList:hover:before, .interestList:hover:before {
+  content: '↗ ';
+  font-family: "Source Sans 3", sans-serif;
+  font-weight: 520;
+  font-style: normal;
+  opacity: 1;
+  transition: opacity 0.5s ease;
+}
+
+#projectPreview, #interestPreview {
+  align-self: center;
+  margin-right: auto;
+  margin-left: auto;
+  background: none;
+  width: 300px;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+}
+#projectPreview:before {
+  content: '[Projects]';
+  font-family: "Krona One";
+  font-size: calc(var(--font-size)*4);
+  margin: auto;
+}
+#projectListContainer:has(:hover) ~ #projectPreview:before {
+  content: '';
+}
+#projectSection:has(#bushviper:hover) > #projectPreview {
+  background: url(/assets/images/bush_viper_render.jpg);
+  background-size: cover;
+  background-position: center;
+}
+#projectSection:has(#teaket:hover) > #projectPreview {
+  background: url(/assets/images/shot_3_with_smoke.png);
+  background-size: cover;
+  background-position: center;
+}
+#projectSection:has(#lighthou:hover) > #projectPreview {
+  background: url(/assets/images/storm_5_krita.png);
+  background-size: cover;
+  background-position: center;
+}
+#projectSection:has(#kitiles:hover) > #projectPreview {
+  background: url(/assets/images/kt_test_05.png);
+  background-size: cover;
+  background-position: center;
+}
+
+#contactSectionWrapper {
+  max-width: 900px;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  jjustify-content: center;
+}
+.contactImg {
+  margin-left: auto;
+  width: 50%;
+  object-fit: contain;
+  filter: drop-shadow(0px 0px 4px rgb(30,20,20,20%));
+}
+#email {
+  margin-right: auto;
+  font-size: calc(var(--font-size)*2);
+  text-decoration: none;
+}
+
+#footer {
+  background: #333435;
+  color: #e8e8e8;
+  height: 90px;
+  line-height: 90px;
+  margin-top: 50px;
+  text-align: center;
+}
+
+.modal {
+  position: absolute;
+  top:0;
+  left:0;
+  height:100%;
+  width: 100%;
+  z-index:50;
+  background-color: #000;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.5s, visibility 0s 0.5s;
+}
+
+.modal.active {
+  overflow: hidden;
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 0.5s;
+}
+
+body:has(.modal.active) {
+  overflow: hidden;
+}
+
+.custom-cursor {
+  position: fixed;
+  opacity: 0;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  mix-blend-mode: difference;
+  width: 50px;
+  margin-left: -25px;
+  margin-top: -25px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background-color: white;
+  transition-property: transform, scale, opacity;
+  transition-duration: 250ms;
+  transition-timing-function: ease-in-out;
+  scale: 0.3;
+  z-index: 900;
+}
+.custom-cursor--init {
+  opacity: 1;
+}
+.custom-cursor--link {
+  scale: 1;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  :root {
+    --font-size: 1vw;
+  }
+  #projectPreview, #interestPreview {
+    width: 40%;
+    height: 100px;
+  }
+  .custom-cursor {
+    display: none;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  :root {
+    --font-size: 0.9vw;
+  }
+  #projectPreview, #interestPreview {
+    width: 50%;
+    height: 100px;
+  }
+  .custom-cursor {
+    display: none;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  :root {
+    --font-size: 1vw;
+  }
+  #projectPreview, #interestPreview {
+    width: 50%;
+    height: 150px;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  :root {
+    --font-size: 0.7vw;
+  }
+  #projectPreview, #interestPreview {
+    width: 400px;
+    height: 300px;
+  }
+  .custom-cursor {
+    display: block;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  :root {
+    --font-size: 0.5vw;
+  }
+}
