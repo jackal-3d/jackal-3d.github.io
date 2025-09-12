@@ -167,7 +167,7 @@ body:has(.modal.active) {
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
   .project {
-    font-size: 0.8vw;
+    font-size: 3vw;
   }
 }
 
