@@ -25,14 +25,14 @@ body {
 
 #contact {
   flex-grow: 1;
-  font-weight: Medium;
+  font-weight: 500;
 }
 
 #about {
   flex-grow: 1;
   width: 70%;
   max-width: 400px;
-  font-weight: SemiBold;
+  font-weight: 600;
 }
 
 #projects {
