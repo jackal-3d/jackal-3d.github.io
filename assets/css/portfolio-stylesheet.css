@@ -17,6 +17,20 @@ body {
   padding: 0;
 }
 
+#grainOverlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-repeat: repeat; 
+  background-image: url(/assets/images/grain_texture.jpg);
+  mix-blend-mode: multiply;
+  pointer-events: none;
+}
+
 #website-container {
   width: 100%;
   height: 100vh;
