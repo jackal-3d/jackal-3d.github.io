@@ -30,7 +30,7 @@ body {
 }
 
 #aboutSection {
-  width: 100%;
+  width: 80%;
   margin: 30px auto;
   display: flex;
   flex-direction: row;
@@ -271,6 +271,9 @@ body:has(.modal.active) {
   }
   .custom-cursor {
     display: block;
+  }
+  #aboutSection {
+    width: 60%;
   }
   #about {
     width: 80%;
