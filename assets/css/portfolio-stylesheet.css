@@ -19,79 +19,43 @@ body {
 #website-container {
   width: 100%;
   height: 100%;
-}
-
-#header {
-  font-family: "Krona One";
-  font-size: calc(var(--font-size)*2.6);
-  font-style: bold;
-  background: #a8bfa4;
-  padding: 15px 20px;
-}
-
-#aboutSection {
-  width: 80%;
-  max-width: 600px;
-  margin: 40px auto 0px auto;
   display: flex;
-  flex-direction: row;
-  align-items: center;
+  flex-direction: column;
+  flex: 1;
+}
+
+#contact {
+  width: 70%;
+  max-width: 400px;
 }
 
 #about {
-  font-size: calc(var(--font-size)*2);
+  margin-top: auto;
 }
 
-#drawing {
-  background: rgb(168, 191, 164, 50%);
-}
-#drawing:hover {
-  cursor: pointer;
-}
-
-.aboutImg {
-  width: 100%;
-  object-fit: contain;
-}
-
-#projectSectionWrapper {
-  width: 100%;
-  background-color: #e8e8e8;
-}
-#projectSection, #interestSection {
-  width: 100%;
-  max-width: 900px;
-  margin: 50px auto;
-  display: flex;
-  flex-direction: row;
-}
-
-#projectListContainer, #interestListContainer {
+#projects {
   padding: 20px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
 }
-.projectList, .interestList {
+
+.project {
   font-family: "Krona One";
   font-size: calc(var(--font-size)*4);
-  margin-left: 10px;
-  transition: transform 0.5s ease;
   width: fit-content;
 }
-.projectList:before, .interestList:before {
+.project:before {
   content: '↗ ';
   font-family: "Source Sans 3", sans-serif;
   font-weight: 520;
   font-style: normal;
   opacity: 0;
 }
-.projectList:hover, .interestList:hover {
-  transform: translateX(50px);
-  background: #e8e8e8;
+.project:hover {
   cursor: pointer;
 }
-.projectList:hover:before, .interestList:hover:before {
+.project:hover:before {
   content: '↗ ';
   font-family: "Source Sans 3", sans-serif;
   font-weight: 520;
@@ -100,73 +64,6 @@ body {
   transition: opacity 0.5s ease;
 }
 
-#projectPreview, #interestPreview {
-  align-self: center;
-  margin-right: auto;
-  margin-left: auto;
-  background: none;
-  width: 300px;
-  height: 200px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 15px;
-}
-#projectPreview:before {
-  content: '[Projects]';
-  font-family: "Krona One";
-  font-size: calc(var(--font-size)*4);
-  margin: auto;
-}
-#interestPreview:before {
-  content: '[Interests]';
-  font-family: "Krona One";
-  font-size: calc(var(--font-size)*4);
-  margin: auto;
-}
-#projectListContainer:has(:hover) ~ #projectPreview:before {
-  content: '';
-}
-#projectSection:has(#bushviper:hover) > #projectPreview {
-  background: url(/assets/images/bush_viper_render.jpg);
-  background-size: cover;
-  background-position: center;
-}
-#projectSection:has(#teaket:hover) > #projectPreview {
-  background: url(/assets/images/shot_3_with_smoke.png);
-  background-size: cover;
-  background-position: center;
-}
-#projectSection:has(#lighthou:hover) > #projectPreview {
-  background: url(/assets/images/storm_5_krita.png);
-  background-size: cover;
-  background-position: center;
-}
-#projectSection:has(#kitiles:hover) > #projectPreview {
-  background: url(/assets/images/kt_test_05.png);
-  background-size: cover;
-  background-position: center;
-}
-
-#contactSectionWrapper {
-  max-width: 900px;
-  margin: auto;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  jjustify-content: center;
-}
-.contactImg {
-  margin-left: auto;
-  width: 50%;
-  object-fit: contain;
-  filter: drop-shadow(0px 0px 4px rgb(30,20,20,20%));
-}
-#email {
-  margin-right: auto;
-  font-size: calc(var(--font-size)*2);
-  text-decoration: none;
-}
 
 .modal {
   position: absolute;
@@ -234,60 +131,25 @@ body:has(.modal.active) {
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
-  :root {
-    --font-size: 1vw;
-  }
-  #projectPreview, #interestPreview {
-    width: 40%;
-    height: 100px;
-  }
-  .custom-cursor {
-    display: none;
-  }
+
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
-  :root {
-    --font-size: 0.9vw;
-  }
-  #projectPreview, #interestPreview {
-    width: 50%;
-    height: 100px;
-  }
-  .custom-cursor {
-    display: none;
-  }
+
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
-  :root {
-    --font-size: 1vw;
-  }
-  #projectPreview, #interestPreview {
-    width: 50%;
-    height: 150px;
-  }
+
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
-  :root {
-    --font-size: 0.7vw;
-  }
-  #projectPreview, #interestPreview {
-    width: 400px;
-    height: 300px;
-  }
-  .custom-cursor {
-    display: block;
-  }
+
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
-  :root {
-    --font-size: 0.5vw;
-  }
+
 }
