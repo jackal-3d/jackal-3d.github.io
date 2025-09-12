@@ -21,10 +21,10 @@ body {
   height: 100%;
   display: flex;
   flex-direction: column;
+  padding: 15px;
 }
 
 #contact {
-  flex-grow: 1;
   font-weight: 500;
 }
 
