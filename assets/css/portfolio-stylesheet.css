@@ -17,6 +17,7 @@ body {
   padding: 0;
   background-image: url(/assets/images/bush_viper_render.jpg);
   background-size: cover;
+  background-position: 25% 50%;
 }
 
 #grainOverlay {
