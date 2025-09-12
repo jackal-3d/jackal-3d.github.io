@@ -14,6 +14,7 @@
 body {
   background: #3c3636;
   margin: 0;
+  padding: 0;
 }
 
 #website-container {
@@ -21,12 +22,15 @@ body {
   height: 100vh;
   display: flex;
   flex-direction: column;
-  padding: 15px;
+}
+
+#website-container > div {
+  margin-left: 15px;
 }
 
 #contact {
   font-weight: 500;
-  margin-bottom: 20px;
+  margin: 20px 0px;
 }
 
 #about {
