@@ -188,6 +188,7 @@ body {
   visibility: visible;
   transition: opacity 0.5s;
   display: flex;
+  flex-wrap: no-wrap;
   flex-direction: column;
   align-items: center;
 }
