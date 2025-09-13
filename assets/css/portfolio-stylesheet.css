@@ -72,6 +72,9 @@ body {
   max-width: 400px;
   font-weight: 600;
 }
+#drawing:hover {
+  cursor: pointer;
+}
 
 #projects {
   display: flex;
