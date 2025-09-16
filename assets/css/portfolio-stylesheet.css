@@ -157,6 +157,9 @@ body:has(.modal.active) {
 
 .modalTitle {
   font-family: "Krona One";
+  font-size: calc(var(--font-size)*2);
+  align-self: flex-start;
+  margin: 15px;
 }
 
 .drawmodalImg {
