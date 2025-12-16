@@ -58,7 +58,9 @@
 // random background
   $(function() {
     var images = ['bush_viper_render.jpg', 'storm_5_krita.png', 'shot_3_with_smoke.png'];
-    $('body').css({'background-image': 'url(/assets/images/' + images[Math.floor(Math.random() * images.length)] + ')'});
+    var positions = ['25% 50%', '78% 50%', '25% 50%'];
+    var randomNum = Math.floor(Math.random() * images.length);
+    $('body').css({'background-image': 'url(/assets/images/' + images[randomNum] + ')', 'background-position': positions[randomNum]});
    });
   
 // modals
