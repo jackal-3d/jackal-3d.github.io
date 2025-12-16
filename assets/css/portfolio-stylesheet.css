@@ -45,7 +45,7 @@ body {
   right: 0;
   background-repeat: repeat; 
   background-image: url(/assets/images/grain_texture.jpg);
-  background-size: 50%;
+  background-size: 75%;
   mix-blend-mode: multiply;
   opacity: 0.5;
   pointer-events: none;
@@ -208,9 +208,6 @@ body:has(.modal.active) {
   .custom-cursor {
       display: none;
   }
-  #grainOverlay {
-    background-size: 75%;
-  }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -221,15 +218,15 @@ body:has(.modal.active) {
   .custom-cursor {
       display: none;
   }
-  #grainOverlay {
-    background-size: 75%;
-  }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
   .project {
     font-size: 3vw;
+  }
+  #grainOverlay {
+    background-size: 50%;
   }
 }
 
