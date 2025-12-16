@@ -55,6 +55,12 @@
 <div class="custom-cursor"></div>
 
 <script>
+// random background
+  $(function() {
+    var images = ['bush_viper_render.jpg', 'storm_5_krita.png', 'shot_3_with_smoke.png'];
+    $('body').css({'background-image': 'url(/assets/images/' + images[Math.floor(Math.random() * images.length)] + ')'});
+   });
+  
 // modals
 $('#bushviper').click(function(e) {
   $('.vipermodal').addClass('active');
