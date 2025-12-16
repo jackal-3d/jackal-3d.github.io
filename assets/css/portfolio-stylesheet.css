@@ -208,6 +208,9 @@ body:has(.modal.active) {
   .custom-cursor {
       display: none;
   }
+  #grainOverlay {
+    background-size: 75%;
+  }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -217,6 +220,9 @@ body:has(.modal.active) {
   }
   .custom-cursor {
       display: none;
+  }
+  #grainOverlay {
+    background-size: 75%;
   }
 }
 
