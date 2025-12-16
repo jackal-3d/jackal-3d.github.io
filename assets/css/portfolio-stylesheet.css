@@ -45,6 +45,7 @@ body {
   right: 0;
   background-repeat: repeat; 
   background-image: url(/assets/images/grain_texture.jpg);
+  background-size: 50%;
   mix-blend-mode: multiply;
   opacity: 0.5;
   pointer-events: none;
