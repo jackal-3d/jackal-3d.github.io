@@ -172,12 +172,6 @@ body:has(.modal.active) {
   max-width: 500px;
   object-fit: contain;
 }
-.image-row {
-  display: flex;
-  flex-direction: row;
-  max-width: 95%;
-  max-height: 500px;
-}
 
 /* MOUSE CURSOR */
 .custom-cursor {
