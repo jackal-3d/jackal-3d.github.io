@@ -15,7 +15,7 @@ body {
   background: #3c3636;
   margin: 0;
   padding: 0;
-  background-image: url(/assets/images/bush_viper_render.jpg);
+  /*background-image: url(/assets/images/bush_viper_render.jpg);*/
   background-size: cover;
   background-position: 25% 50%;
 }
