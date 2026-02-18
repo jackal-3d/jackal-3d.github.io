@@ -167,7 +167,7 @@ body:has(.modal.active) {
 
 .drawmodalImg {
   display: block;
-  margin: auto;
+  margin: auto auto 15px auto;
   width: 90%;
   max-width: 500px;
   object-fit: contain;
