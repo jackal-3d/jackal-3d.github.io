@@ -205,6 +205,12 @@ body:has(.modal.active) {
   max-width: 1000px;
 }
 
+.rowContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
 /* MOUSE CURSOR */
 .custom-cursor {
   position: fixed;
