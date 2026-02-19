@@ -213,6 +213,7 @@ body:has(.modal.active) {
 
 .space15px {
   height: 15px;
+  min-height: 15px;
 }
 
 /* MOUSE CURSOR */
