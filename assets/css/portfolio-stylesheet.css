@@ -192,6 +192,12 @@ body:has(.modal.active) {
   mix-blend-mode: color-burn;
 }
 
+.modalImg {
+  display: block;
+  object-fit: contain;
+  width: 100%;
+}
+
 .renderImg {
   width: 80%;
   max-width: 1000px;
