@@ -173,6 +173,30 @@ body:has(.modal.active) {
   object-fit: contain;
 }
 
+.sectionHeader {
+  width: 100%;
+  height: 5vw;
+  display:flex;
+  flex-wrap: wrap;
+  align-content: center;
+  padding: 5px 0px 5px 15px;
+  background-image: url(/assets/images/bush_viper_render.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0% 50%;
+}
+
+.textColorBurn {
+  font-family: "Krona One";
+  font-size: 22px;
+  mix-blend-mode: color-burn;
+}
+
+.renderImg {
+  width: 80%;
+  max-width: 1000px;
+}
+
 /* MOUSE CURSOR */
 .custom-cursor {
   position: fixed;
