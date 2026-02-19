@@ -129,6 +129,7 @@ body {
 .modal.active {
   max-height: 100vh;
   overflow-y: auto;
+  overflow-x: hidden;
   opacity: 1;
   visibility: visible;
   transition: opacity 0.5s;
@@ -179,6 +180,7 @@ body:has(.modal.active) {
   display:flex;
   flex-wrap: wrap;
   align-content: center;
+  margin: 15px 0px 50px 0px;
   padding: 5px 0px 5px 15px;
   background-image: url(/assets/images/bush_viper_render.jpg);
   background-repeat: no-repeat;
