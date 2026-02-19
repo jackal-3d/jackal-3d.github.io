@@ -18,10 +18,10 @@
   <div id="contact"><a href="mailto:3d.jackal@gmail.com">3d.jackal@gmail.com</a></div>
   <div id="about">I’m a 3D artist who enjoys creating game-ready assets and loves all things procedural. My interests include <span id="drawing" style="text-decoration: underline;">↗drawing</span> and language learning.</div>
   <div id="projects">
-    <div class="project" id="bushviper">Projects</div>
-    <div class="project">Tea kettle</div>
-    <div class="project">Lighthouse</div>
-    <div class="project">Kitchen Tiles</div>
+    <div class="project" id="button1">Projects</div>
+    <div class="project" id="button2">Tea kettle</div>
+    <div class="project" id="button3">Lighthouse</div>
+    <div class="project" id="button4">Kitchen Tiles</div>
   </div>
 
 </div>
@@ -29,7 +29,7 @@
 <div id="colorOverlay"></div>
 <div id="grainOverlay"></div>
   
-<div class="modal vipermodal">
+<div class="modal modal1">
   <div class="modalTitle">Personal projects</div>
   <div class="sectionHeader" style="background-position: 0% 55%;"><span class="textColorBurn" style="color:#7A9C43;">Bush viper</span></div>
     <div class="renderImg"><img src="/assets/images/bush_viper_render.jpg" class="modalImg"></div>
@@ -46,15 +46,15 @@
     </div>
 </div>
   
-<div class="modal teamodal">
+<div class="modal modal2">
   <div class="modalTitle">Tea kettle</div>
 </div>
   
-<div class="modal lighthousemodal">
+<div class="modal modal3">
   Lighthouse modal dialog
 </div>
   
-<div class="modal tilemodal">
+<div class="modal modal4">
   Kitchen tiles modal dialog
 </div>
 
@@ -80,40 +80,40 @@
    });
   
 // modals
-$('#bushviper').click(function(e) {
-  $('.vipermodal').addClass('active');
+$('#button1').click(function(e) {
+  $('.modal1').addClass('active');
   e.preventDefault();
 });
 
-$('.vipermodal').click(function(e) {
-  $('.vipermodal').removeClass('active');
+$('.modal1').click(function(e) {
+  $('.modal1').removeClass('active');
   e.preventDefault();
 });
 
-$('#teaket').click(function(e) {
-  $('.teamodal').addClass('active');
+$('#button2').click(function(e) {
+  $('.modal2').addClass('active');
   e.preventDefault();
 });
-$('.teamodal').click(function(e) {
-  $('.teamodal').removeClass('active');
-  e.preventDefault();
-});
-
-$('#lighthou').click(function(e) {
-  $('.lighthousemodal').addClass('active');
-  e.preventDefault();
-});
-$('.lighthousemodal').click(function(e) {
-  $('.lighthousemodal').removeClass('active');
+$('.modal2').click(function(e) {
+  $('.modal2').removeClass('active');
   e.preventDefault();
 });
 
-$('#kitiles').click(function(e) {
-  $('.tilemodal').addClass('active');
+$('#button3').click(function(e) {
+  $('.modal3').addClass('active');
   e.preventDefault();
 });
-$('.tilemodal').click(function(e) {
-  $('.tilemodal').removeClass('active');
+$('.modal3').click(function(e) {
+  $('.modal3').removeClass('active');
+  e.preventDefault();
+});
+
+$('#button4').click(function(e) {
+  $('.modal4').addClass('active');
+  e.preventDefault();
+});
+$('.modal4').click(function(e) {
+  $('.modal4').removeClass('active');
   e.preventDefault();
 });
 
