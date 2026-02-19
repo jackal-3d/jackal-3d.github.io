@@ -202,13 +202,17 @@ body:has(.modal.active) {
 
 .renderImg {
   width: 100%;
-  max-width: 1000px;
+  max-width: 1200px;
 }
 
 .rowContainer {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
+}
+
+.space15px {
+  height: 15px;
 }
 
 /* MOUSE CURSOR */
