@@ -287,6 +287,10 @@ body:has(.modal.active) {
     height: 30px;
     min-height: 30px;
   }
+  .sectionHeader {
+    height: 5vw;
+    min-height: 5vw;
+  }
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
