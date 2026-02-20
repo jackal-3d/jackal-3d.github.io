@@ -215,6 +215,7 @@ body:has(.modal.active) {
   flex-direction: row;
   flex-wrap: nowrap;
   max-width: 800px;
+  justify-content: center;
 }
 
 .space15px {
