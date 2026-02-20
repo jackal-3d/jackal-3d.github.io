@@ -206,6 +206,10 @@ body:has(.modal.active) {
   flex: var(--aspect-ratio);
 }
 
+.imgCaption {
+  opacity: 80%;
+}
+
 .rowContainer {
   display: flex;
   flex-direction: row;
