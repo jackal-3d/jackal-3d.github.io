@@ -222,6 +222,10 @@ body:has(.modal.active) {
   min-height: 15px;
 }
 
+.description {
+  font-size: var(--font-size);
+}
+
 /* MOUSE CURSOR */
 .custom-cursor {
   position: fixed;
