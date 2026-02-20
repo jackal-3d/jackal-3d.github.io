@@ -203,6 +203,7 @@ body:has(.modal.active) {
 .renderImg {
   width: 100%;
   max-width: 1200px;
+  flex: var(--aspect-ratio);
 }
 
 .rowContainer {
