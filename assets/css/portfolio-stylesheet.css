@@ -119,11 +119,14 @@ body {
   height:100%;
   width: 100%;
   z-index:50;
-  background: #3c3636;
+  background-color: #3c3636;
   visibility: hidden;
   opacity: 0;
   transition: opacity 0.5s, visibility 0s 0.5s;
   display: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }
 
 .modal.active {
